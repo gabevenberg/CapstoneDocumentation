@@ -8,16 +8,9 @@ Team Members:
 
 ## Buisness Need
 
-<!-- Kata is an open source hybrid container/VM runtime.
+The "Why" for this project is that they need our help to convert the current code base that they are using which is written in the language called "rust", and they want us to take that code and convert it into the new language called "rust". Reason being is rust will be more efficient for them and is better suited for their newest featureset. After it all gets converted this will take the place of their service called "kata-runtime".
 
-Kata-ctl.
-the successor to kata-runtime (used to be the runtime, but is now only a utility)
-For the new runtime-rs, kata needs a rust version of the kata-runtime utility that covers the new featureset.
-
-rust runtime. Will have minimum viable product, but obviously more than the minimum viable product is eventually needed. We have an existing 'reference implementation', meaning the old go implementaiton, but the new implementaiton will not be a 1 for 1 translation, as the goal is to also improve cloud hypervisor integration.
-the runtime has a built in hypervisor, but in order for it to achive feature parity with the go runtime, it should also be able to use an external hypervisor. -->
-
-<!-- This should be the most stable and most important part of the document.  It should be 2-3 short paragraphs with a summary of the customer and the business need that you are intending to solve with the Capstone project.  This information should come from the customer through content they have provided or through discussions with the customer.  This should answer the ‘why’ question. -->
+If we happen to finish the Kata-ctl project our mentor is going to switch us to another project called Rust Runtime. Which already is coded but out job is to transcribe the "go" code to the new rust like before. We will not necessarily be coding 1 to 1 translation they want to help improve cloud hypervisor integration so if there is more effiecint ways to do things we are suppoed to implement them. Also need to make an external hypervisor work with the runtime, the runtime has a built in hypervisor, but in order for it to achive feature parity with the go runtime, it should also be able to use an external hypervisor. On the customer side of things this will allow users acess to light weight VMs that have the efficiency of a container with the security of a virtual machine (like the first project).
 
 ## Intended Solution
 
