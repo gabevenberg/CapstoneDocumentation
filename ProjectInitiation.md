@@ -29,6 +29,26 @@ Having an architecture diagram showing the key components that you will be build
 <!-- Break the project down into the two key milestones as a starting point for the project.  This will evolve as the project goes, so don’t expect things to go as planned.  One important concept for Dev Phase 1 is the ‘steel thread’ that will demonstrate some part of the project in an end to end fashion.  Users and user stories can be introduced here to identify the high priority scenarios for the project.  Map these into Dev Phase 1 and Dev Phase 2. -->
 
 ## Technology Requirements
+Due to Kata being a Linux and VM based project, building and testing the software that we are writing will require access to a Linux development environment for all team members.
+In previous years, this was not a problem, as everyone in the team had personal linux machines.
+However, this year, only one team member has a pre-existing linux machine.
+Two other team members have desktops at home and are willing to dual boot from an internal drive.
+
+However, the final two team members only own laptops, and are not able to dual boot.
+Unfortunately, the university provided VM's are unsuitable for the tasks, as they themselves are virtual machines, and do not have nested virtualization availible.
+This leaves us with two options.
+
+First, we could directly provide two development laptops to the team members.
+These machines need not be very high spec, 4-8gb of ram and any cpu after around 2015 should work well.
+This is the preferred solution.
+
+Secondly, we could have a server running that both team members (or potentially all of us) can remote into, via ssh or remote desktop.
+The server would need to either be running on bare metal, or support nested virtualization.
+Additonally, certan permissions may be required, at the very least permission to create and manage virtual machines, and potentially up to root acess.
+The machine would also require a network connection to the outside world, including the ability for use to remote in from off the NDSU network.
+The server would need at least 1 core per user, and at least 4gb of ram per user.
+
+The first option is certanly more ideal, but the second option will be easier to pitch to IT, as they retain physical control of the hardware. (on the other hand, they may be a bit uppity about us having root acess to a device that is visible to the outside.)
 
 <!-- This section should indicate what technology frameworks are required for the project by the client.  This would include things like the use of cloud computing from a specific company, frameworks like .Net or React, programming languages, emulators, test frameworks, etc.  It’s important to highlight any client requirements that the project team doesn’t have access to directly.  Are there subscriptions or licenses required?  Suggested training for the technology requirements should also be considered. -->
 
