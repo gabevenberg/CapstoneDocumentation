@@ -5,6 +5,7 @@ Team Members:
 * Gabe Venberg
 * Juanaiga Okugas
 * Maxwell Wendlandt
+* Christopher Robinson
 
 ## Buisness Need
 
