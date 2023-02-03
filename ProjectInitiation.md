@@ -56,7 +56,27 @@ The first option is certanly more ideal, but the second option will be easier to
 
 <!-- This section should indicate what technology frameworks are required for the project by the client.  This would include things like the use of cloud computing from a specific company, frameworks like .Net or React, programming languages, emulators, test frameworks, etc.  It’s important to highlight any client requirements that the project team doesn’t have access to directly.  Are there subscriptions or licenses required?  Suggested training for the technology requirements should also be considered. -->
 
-## Project and Infrastrucutre Requirements
+## Project and Infrastructure Requirements
+
+<!--
+* git
+* github
+	* github issues
+	* github pull requests
+	* github projects
+* cargo
+* no real design docs
+* markdown documentation
+-->
+
+While the Kata community does not use traditional UML diagrams or other such formal documentation,
+the project is extremely well documented with markdown documents describing how Kata works and how it is used.
+For any code that we write that changes functionality, we would be expected to update the relevant documentation as well.
+Documentation of design and design process primarily exists through the heavy usage of the GitHub workflow, using issues that are fixed by pull requests with discussion at every step of the pull request process thoroughly documents the rationale behind any change.
+
+As for source control, git is used to document all code changes and history, as well as using the aforementioned GitHub and pull requests to document the reasons behind them.
+
+The build system is extremely simple on our end, simply running cargo build in order to compile the program locally. Kata does have a CI system in place, so further checks will be carried out before any code is merged into the master branch.
 
 <!-- This section should include infrastructure needs for the project such as specific tools for backlog tracking or issue tracking.  You should clarify what documentation is required by the client beyond the project initiation and backlog documents that the class requires.  You should expect some additional requirements or design documents, for example.  How should requirements be specified?  Are UML or other diagrams required for the design?
 The section should include technical infrastructure such as source code control expectations, build frameworks, etc.  Again, it’s essential to highlight any client requirements that the project team doesn’t have access to.  Training should be considered as appropriate. -->
